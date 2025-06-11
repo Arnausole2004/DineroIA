@@ -24,8 +24,9 @@ a{text-decoration:none;color:inherit}
 
 .navbar.horizontal .nav-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column; /* Esto apila logo y menú */
+  align-items: center;     /* Esto centra todo */
+  gap: 1rem;
 }
 
 .navbar.horizontal .logo {
@@ -38,6 +39,7 @@ a{text-decoration:none;color:inherit}
 .nav-links.horizontal {
   display: flex;
   gap: 2rem;
+  justify-content: center;
 }
 
 .nav-links.horizontal a {
