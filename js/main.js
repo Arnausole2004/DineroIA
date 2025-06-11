@@ -14,6 +14,5 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     }
   });
 });
-document.querySelector('.info-section').style.backgroundColor = 'rgba(255,0,0,0.3)';
 
 ```
