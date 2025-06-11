@@ -355,32 +355,3 @@ footer {
   pointer-events: none;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.intro-continue {
-  margin-bottom: 0; /* elimina margen inferior si tiene */
-  padding-bottom: 1rem; /* opcional, para no quedar muy pegado */
-  flex-grow: 1; /* para que ocupe espacio disponible */
-}
-
-/* También asegúrate que el footer o sección final no tenga márgenes innecesarios */
-footer, #contacto {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-
-
-
-
-
