@@ -268,18 +268,22 @@ section.app-section {
   transform: scale(1.05);
 }
 
-/* Contacto compacto y ancho completo */
+/* Fondo con patrón red neuronal verde */
 .contact-section {
-  background-color: #000;
-  color: #fff;
+  background: 
+    radial-gradient(circle at center, rgba(40,167,69,0.1) 2px, transparent 3px),
+    radial-gradient(circle at center, rgba(40,167,69,0.1) 2px, transparent 3px);
+  background-position: 0 0, 15px 15px;
+  background-size: 30px 30px;
   padding: 1rem 1rem;
-  max-width: 600px;  /* Puedes ajustar o quitar para que sea full ancho */
+  max-width: 600px;  /* Ajusta o elimina para ancho total */
   margin: 2rem auto;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.7);
-  font-family: 'Poppins', sans-serif;
-  width: 100%; /* Para que ocupe todo el ancho del contenedor */
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  color: #fff;  /* Texto en blanco */
+  box-shadow: 0 0 10px rgba(40, 167, 69, 0.4);
 }
 
 .contact-section h2 {
@@ -287,7 +291,7 @@ section.app-section {
   margin-bottom: 1rem;
   font-weight: 700;
   font-size: 1.5rem;
-  color: #00e0d0;
+  color: #fff;  /* Título en blanco */
 }
 
 .contact-section label {
@@ -295,6 +299,7 @@ section.app-section {
   margin-bottom: 0.3rem;
   font-weight: 500;
   font-size: 0.9rem;
+  color: #fff; /* Labels en blanco */
 }
 
 .contact-section input,
@@ -306,41 +311,31 @@ section.app-section {
   border-radius: 6px;
   font-size: 0.9rem;
   font-family: inherit;
-}
-
-.contact-section input {
-  background-color: #222;
+  background-color: rgba(40, 167, 69, 0.1); /* Fondo verde muy suave */
   color: #fff;
-  height: 32px; /* Más compacto */
-}
-
-.contact-section textarea {
-  background-color: #222;
-  color: #fff;
-  resize: vertical;
-  min-height: 60px; /* Más compacto */
 }
 
 .contact-section input::placeholder,
 .contact-section textarea::placeholder {
-  color: #aaa;
+  color: #ccc;
 }
 
 .contact-section button {
   width: 100%;
   padding: 0.6rem;
-  background-color: #00e0d0;
+  background-color: #fff; /* Botón blanco */
   border: none;
   border-radius: 6px;
   font-weight: 700;
   font-size: 1rem;
-  color: #000;
+  color: #28a745; /* Verde para texto del botón */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-section button:hover {
-  background-color: #00b3a5;
+  background-color: #28a745; /* Fondo verde al hover */
+  color: #fff; /* Texto blanco al hover */
 }
 
 
