@@ -269,9 +269,8 @@ section.app-section {
 }
 
 /* ==== CONTACTO PERSONALIZADO ==== */
-
 .contact-section {
-  background: linear-gradient(to right, #145214, #1e7e34); /* Verde fuerte con degradado */
+  background: linear-gradient(to right, #145214, #1e7e34);
   padding: 4rem 2rem;
   color: #fff;
   font-family: 'Poppins', sans-serif;
@@ -281,7 +280,7 @@ section.app-section {
 }
 
 .contact-container {
-  background-color: #1c1c1c; /* Caja oscura elegante */
+  background-color: #1c1c1c;
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   padding: 3rem 2rem;
@@ -380,21 +379,6 @@ section.app-section {
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-
-
-
-
-
-/* Responsive */
-@media (max-width: 768px) {
-  .section-content {
-    flex-direction: column !important;
-  }
-  .navbar.horizontal .nav-links {
-    display: none;
   }
 }
 
