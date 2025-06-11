@@ -345,3 +345,61 @@ footer {
   padding: 0;
 }
 
+.opcion {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: #f5faff;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.opcion:hover {
+  transform: translateY(-4px);
+}
+
+.opcion img {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.opcion .contenido {
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.opcion .contenido h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+  color: #004080;
+}
+
+.opcion .contenido p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+}
+
+.btn-descarga {
+  display: inline-block;
+  background: #004080;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-descarga:hover {
+  background: #0066cc;
+}
+
