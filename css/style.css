@@ -137,6 +137,17 @@ a{text-decoration:none;color:inherit}
   margin-bottom: 0; /* elimina margen abajo */
   ...
 }
+.intro-continue {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #222;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+.intro-continue p + p {
+  margin-top: 1rem;
+}
 
 }
 
