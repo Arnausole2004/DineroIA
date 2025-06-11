@@ -189,6 +189,11 @@ a{text-decoration:none;color:inherit}
 .intro-continue p + p {
   margin-top: 1rem;
 }
+  .intro-continue {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 
 }
 
@@ -344,10 +349,10 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100% !important;  /* Para que siempre ocupe el ancho total */
-  height: 100% !important; /* Que ocupe toda la altura del header */
-  display: block;          /* Evita espacios extra por ser elemento inline */
-  z-index: 0;              /* Que quede detrás del texto */
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  pointer-events: none;
 }
 
 
