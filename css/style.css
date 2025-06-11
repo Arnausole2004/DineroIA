@@ -131,6 +131,30 @@ a{text-decoration:none;color:inherit}
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.intro-continue {
+  background: #f9f9f9;
+  padding: 3rem 1.5rem;
+  border-radius: 16px;
+  max-width: 900px;
+  margin: 3rem auto 2rem auto;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  transition: all 0.3s ease-in-out;
+}
+
+.intro-continue .text-box h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.intro-continue .text-box p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
 
 /* Responsive */
 @media (max-width: 600px) {
