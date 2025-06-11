@@ -268,38 +268,35 @@ section.app-section {
   transform: scale(1.05);
 }
 
-/* Fondo con patrón red neuronal verde más fuerte */
 .contact-section {
-  background: 
-    radial-gradient(circle at center, rgba(40,167,69,0.3) 3px, transparent 4px),
-    radial-gradient(circle at center, rgba(40,167,69,0.3) 3px, transparent 4px);
-  background-position: 0 0, 15px 15px;
+  background-color: #000; /* Fondo negro como base */
+  background-image:
+    radial-gradient(circle, rgba(0,128,0,0.7) 2px, transparent 3px),
+    radial-gradient(circle, rgba(0,128,0,0.7) 2px, transparent 3px),
+    linear-gradient(0deg, rgba(0,128,0,0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,128,0,0.3) 1px, transparent 1px);
+  background-position: 0 0, 15px 15px, 0 0, 15px 15px;
   background-size: 30px 30px;
-  padding: 1rem 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #fff;
   max-width: 600px;
   margin: 2rem auto;
-  border-radius: 8px;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  width: 100%;
-  color: #fff;
-  box-shadow: 0 0 15px rgba(40, 167, 69, 0.6);
 }
 
 .contact-section h2 {
   text-align: center;
-  margin-bottom: 1rem;
   font-weight: 700;
   font-size: 1.5rem;
-  color: #fff;
+  margin-bottom: 1rem;
 }
 
 .contact-section label {
   display: block;
   margin-bottom: 0.3rem;
   font-weight: 500;
-  font-size: 0.9rem;
-  color: #fff;
 }
 
 .contact-section input,
@@ -309,15 +306,14 @@ section.app-section {
   margin-bottom: 1rem;
   border: none;
   border-radius: 6px;
-  font-size: 0.9rem;
-  font-family: inherit;
-  background-color: rgba(40, 167, 69, 0.2); /* Fondo verde más intenso */
+  font-size: 1rem;
+  background-color: rgba(0,128,0,0.2);
   color: #fff;
 }
 
 .contact-section input::placeholder,
 .contact-section textarea::placeholder {
-  color: #ddd;
+  color: #ccc;
 }
 
 .contact-section button {
@@ -328,15 +324,16 @@ section.app-section {
   border-radius: 6px;
   font-weight: 700;
   font-size: 1rem;
-  color: #28a745;
+  color: #008000;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-section button:hover {
-  background-color: #28a745;
+  background-color: #008000;
   color: #fff;
 }
+
 
 
 
