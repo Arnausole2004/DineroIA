@@ -268,35 +268,76 @@ section.app-section {
   transform: scale(1.05);
 }
 
-/* ===== CONTACTO & FOOTER ===== */
-#contacto {
-  padding: 3rem 0;
-  background: var(--claro);
-}
-
-#contacto .container {
-  width: min(90%, 800px);
-  margin-inline: auto;
-  text-align: center;
-}
-
-#contacto a {
-  color: var(--primario);
-  font-weight: 600;
-  text-decoration: none;
-}
-
-#contacto a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  background: var(--oscuro);
+/* Sección de contacto con fondo negro */
+.contact-section {
+  background-color: #000;
   color: #fff;
-  text-align: center;
-  padding: 2rem 0;
-  font-size: .9rem;
+  padding: 2rem 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  font-family: 'Poppins', sans-serif;
 }
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #00e0d0;
+}
+
+.contact-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.contact-section input {
+  background-color: #222;
+  color: #fff;
+}
+
+.contact-section textarea {
+  background-color: #222;
+  color: #fff;
+  resize: vertical;
+}
+
+.contact-section input::placeholder,
+.contact-section textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-section button {
+  width: 100%;
+  padding: 0.85rem;
+  background-color: #00e0d0;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+  background-color: #00b3a5;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
