@@ -131,6 +131,12 @@ a{text-decoration:none;color:inherit}
   .intro-section p {
     font-size: 1rem;
   }
+  .intro-section img {
+  margin-top: 2.5rem;
+  margin-bottom: 0; /* elimina margen abajo */
+  ...
+}
+
 }
 
 }
