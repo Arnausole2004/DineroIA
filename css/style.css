@@ -268,52 +268,57 @@ section.app-section {
   transform: scale(1.05);
 }
 
-/* Sección de contacto con fondo negro */
+/* Contacto compacto y ancho completo */
 .contact-section {
   background-color: #000;
   color: #fff;
-  padding: 2rem 1rem;
-  max-width: 600px;
+  padding: 1rem 1rem;
+  max-width: 600px;  /* Puedes ajustar o quitar para que sea full ancho */
   margin: 2rem auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.7);
   font-family: 'Poppins', sans-serif;
+  width: 100%; /* Para que ocupe todo el ancho del contenedor */
+  box-sizing: border-box;
 }
 
 .contact-section h2 {
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #00e0d0;
 }
 
 .contact-section label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   font-weight: 500;
+  font-size: 0.9rem;
 }
 
 .contact-section input,
 .contact-section textarea {
   width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
   border: none;
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: inherit;
 }
 
 .contact-section input {
   background-color: #222;
   color: #fff;
+  height: 32px; /* Más compacto */
 }
 
 .contact-section textarea {
   background-color: #222;
   color: #fff;
   resize: vertical;
+  min-height: 60px; /* Más compacto */
 }
 
 .contact-section input::placeholder,
@@ -323,12 +328,12 @@ section.app-section {
 
 .contact-section button {
   width: 100%;
-  padding: 0.85rem;
+  padding: 0.6rem;
   background-color: #00e0d0;
   border: none;
   border-radius: 6px;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #000;
   cursor: pointer;
   transition: background-color 0.3s ease;
