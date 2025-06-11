@@ -309,12 +309,7 @@ footer {
   z-index: 0;              /* Que quede detrás del texto */
 }
 
-.tech-header h1 {
-  position: relative;
-  z-index: 1;
-  color: white; /* O el color que prefieras para que contraste */
-  padding: 1rem;
-}
+
 
 
 
