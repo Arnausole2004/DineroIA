@@ -278,6 +278,24 @@ footer {
   z-index: 0;
 }
 
+.tech-header {
+  position: relative;
+  overflow: hidden; /* Evita que el canvas se salga del header */
+  height: 300px;    /* Ajusta la altura según lo que necesites */
+  max-height: 40vh; /* También puedes usar unidades relativas */
+  margin: 0;        /* Quita márgenes si hay */
+  padding: 0;
+}
+
+#network {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;  /* Para que siempre ocupe el ancho total */
+  height: 100% !important; /* Que ocupe toda la altura del header */
+  display: block;          /* Evita espacios extra por ser elemento inline */
+  z-index: 0;              /* Que quede detrás del texto */
+}
 
 
 
