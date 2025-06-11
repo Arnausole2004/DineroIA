@@ -287,10 +287,13 @@ section.app-section {
 }
 
 .contact-section h2 {
+  color: #fff; /* Texto blanco */
   text-align: center;
   font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
 }
 
 .contact-section label {
