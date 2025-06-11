@@ -268,73 +268,39 @@ section.app-section {
   transform: scale(1.05);
 }
 
-.contact-section {
-  background-color: #000; /* Fondo negro como base */
-  background-image:
-    radial-gradient(circle, rgba(0,128,0,0.7) 2px, transparent 3px),
-    radial-gradient(circle, rgba(0,128,0,0.7) 2px, transparent 3px),
-    linear-gradient(0deg, rgba(0,128,0,0.3) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,128,0,0.3) 1px, transparent 1px);
-  background-position: 0 0, 15px 15px, 0 0, 15px 15px;
-  background-size: 30px 30px;
-  padding: 1rem;
-  border-radius: 8px;
+.contacto {
+  background: #000; /* fondo negro igual que header */
   color: #fff;
-  max-width: 600px;
-  margin: 2rem auto;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease forwards;
 }
 
-.contact-section h2 {
-  color: #fff; /* Texto blanco */
+.contacto .container {
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
+}
+
+.contacto h2 {
   font-weight: 700;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-}
-
-.contact-section label {
-  display: block;
-  margin-bottom: 0.3rem;
-  font-weight: 500;
-}
-
-.contact-section input,
-.contact-section textarea {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  background-color: rgba(0,128,0,0.2);
+  margin-bottom: 0.5rem;
   color: #fff;
 }
 
-.contact-section input::placeholder,
-.contact-section textarea::placeholder {
+.contacto p {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 0;
   color: #ccc;
 }
 
-.contact-section button {
-  width: 100%;
-  padding: 0.6rem;
-  background-color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-weight: 700;
-  font-size: 1rem;
-  color: #008000;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.contact-section button:hover {
-  background-color: #008000;
-  color: #fff;
+/* Animación fadeIn si no la tienes definida */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 
