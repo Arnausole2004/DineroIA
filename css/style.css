@@ -278,4 +278,34 @@ footer {
   z-index: 0;
 }
 
+/* Quitar margen/padding debajo de la sección de introducción */
+.intro-section {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Quitar margen inferior de la imagen */
+.intro-section img {
+  margin-bottom: 0;
+  display: block; /* para evitar espacios debajo por línea base de imagen */
+}
+
+/* Quitar margen superior y padding superior del contacto */
+#contacto {
+  margin-top: 0;
+  padding-top: 1rem; /* puedes ajustar este valor a lo que quieras */
+}
+
+/* Contenedor contacto sin margen/padding extra */
+#contacto .container {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* Párrafos de contacto sin margen superior */
+#contacto p {
+  margin-top: 0;
+}
+
+
 
