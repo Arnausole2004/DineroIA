@@ -268,40 +268,97 @@ section.app-section {
   transform: scale(1.05);
 }
 
-.contacto {
-  background: #000; /* fondo negro igual que header */
+/* Contacto - sección en caja verde con texto blanco */
+.contact-section {
+  background: #218838; /* verde fuerte */
+  padding: 3rem 2rem;
+  max-width: 600px;
+  margin: 3rem auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(33, 136, 56, 0.4);
+  font-family: 'Poppins', sans-serif;
   color: #fff;
-  width: 100%;
-  padding: 1.5rem 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 0.6s ease forwards;
-}
-
-.contacto .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  animation: fadeIn 0.8s ease forwards;
   text-align: center;
+  box-sizing: border-box;
 }
 
-.contacto h2 {
+.contact-section h2 {
+  font-size: 2rem;
   font-weight: 700;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: #e6f4ea; /* verde muy claro / casi blanco */
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-section label {
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: left;
+  color: #d6efd4; /* verde claro */
+}
+
+.contact-section input[type="text"],
+.contact-section textarea {
+  padding: 0.8rem 1rem;
+  border: 2px solid #a5d6a7; /* verde claro */
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  resize: vertical;
+  background-color: #e6f4ea; /* blanco verdoso claro */
+  color: #1b3b1b; /* verde muy oscuro para texto */
+  transition: border-color 0.3s ease;
+}
+
+.contact-section input[type="text"]:focus,
+.contact-section textarea:focus {
+  outline: none;
+  border-color: #81c784; /* verde medio */
+  background-color: #ffffff;
+  color: #145214;
+}
+
+.contact-section button {
+  background-color: #a5d6a7; /* verde claro */
+  color: #1b3b1b; /* verde oscuro */
+  padding: 1rem 0;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-section button:hover {
+  background-color: #81c784; /* verde medio */
   color: #fff;
 }
 
-.contacto p {
-  font-weight: 400;
-  font-size: 1rem;
-  margin-bottom: 0;
-  color: #ccc;
+/* Responsive */
+@media (max-width: 480px) {
+  .contact-section {
+    margin: 2rem 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .contact-section h2 {
+    font-size: 1.6rem;
+  }
 }
 
-/* Animación fadeIn si no la tienes definida */
+/* Animación fadeIn */
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
 }
+
 
 
 
