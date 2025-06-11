@@ -203,15 +203,20 @@
 </section>
 
 
-  <!-- ===== CONTACTO ===== -->
-  <section id="contacto">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>¿Tienes un proyecto o idea relacionada con IA? Escríbenos a <a href="mailto:info@ganardineroia.com" style="color:var(--primario);font-weight:600">info@ganardineroia.com</a></p>
-    </div>
-  </section>
+<!-- Formulario de contacto sencillo -->
+<section id="contacto" class="contact-section">
+  <h2>Contacto</h2>
+  <form>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
 
-  <footer>© 2025 Ganar Dinero con IA · Proyecto educativo.</footer>
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
 
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous"></script>
