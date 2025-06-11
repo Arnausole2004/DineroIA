@@ -14,10 +14,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     }
   });
 });
-function resizeCanvas() {
-  const header = document.querySelector('.tech-header');
-  width = canvas.width = header.clientWidth;
-  height = canvas.height = header.clientHeight;
+
 }
 
 ```
