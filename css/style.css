@@ -245,5 +245,6 @@ footer {
   height: 100%;
   pointer-events: none;
   z-index: 0;
+  display: block;
 }
 
