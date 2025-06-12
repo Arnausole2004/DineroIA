@@ -1,8 +1,7 @@
-/* GENERAL */
+/* ====== General ====== */
 body {
   font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 0; padding: 0;
   background-color: #fff;
   color: #333;
   scroll-behavior: smooth;
@@ -14,24 +13,28 @@ body {
   padding: 0 1rem;
 }
 
-/* HEADER */
+/* ====== Header ====== */
 .header {
   background: #000;
   padding: 1rem 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.header .container {
+.header-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
 .logo {
   font-weight: 700;
   font-size: 2rem;
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
 }
 
 .logo span {
@@ -40,16 +43,14 @@ body {
 
 .nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 2rem;
-  margin-top: 0.5rem;
 }
 
 .nav a {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
@@ -57,140 +58,219 @@ body {
   color: #28a745;
 }
 
-/* HERO SECTION */
-.hero {
+/* ====== Hero ====== */
+.hero.freelancer-hero {
+  background: linear-gradient(135deg, #e6f2ea 0%, #c7e5c9 100%);
+  padding: 5rem 0;
+}
+
+.hero-content {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 2rem;
-  background-color: #f0fff5;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
 .hero-text {
-  flex: 1;
-  padding-right: 2rem;
+  flex: 1 1 50%;
+  min-width: 300px;
 }
 
 .hero-text h1 {
-  font-size: 2.5rem;
-  color: #28a745;
+  font-size: 2.8rem;
   margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.hero-text p {
-  font-size: 1.1rem;
+.highlight-green {
+  color: #28a745;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
   color: #444;
-  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: #28a745;
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 5px 12px rgba(40, 167, 69, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+  box-shadow: 0 7px 15px rgba(33, 136, 56, 0.6);
 }
 
 .hero-image {
-  flex: 1;
+  flex: 1 1 45%;
+  min-width: 300px;
   text-align: center;
 }
 
 .hero-image img {
-  max-width: 300px;
+  max-width: 100%;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* BUTTON */
-.btn-descarga {
-  background-color: #28a745;
-  color: white;
-  padding: 0.9rem 2rem;
-  font-size: 1.1rem;
-  text-decoration: none;
-  border-radius: 8px;
-  display: inline-block;
-  margin-top: 1.5rem;
-  transition: background 0.3s ease;
-}
-
-.btn-descarga:hover {
-  background-color: #218838;
-}
-
-/* INFO SECTIONS */
+/* ====== Funcionamiento ====== */
 .info-section {
-  padding: 3rem 2rem;
-  background-color: #fff;
-  border-top: 1px solid #eee;
+  padding: 4rem 0;
+  background: #fff;
 }
 
-.info-section h2 {
-  font-size: 2rem;
+.funciona-content {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.funciona-text {
+  flex: 1 1 50%;
+  min-width: 320px;
+}
+
+.funciona-text h2 {
+  font-size: 2.2rem;
   color: #28a745;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.funciona-text p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #444;
   margin-bottom: 1rem;
 }
 
-.info-section p,
-.info-section ul {
+.funciona-image {
+  flex: 1 1 50%;
+  min-width: 320px;
+  text-align: right;
+}
+
+.funciona-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(40, 167, 69, 0.15);
+}
+
+/* ====== Consejos ====== */
+.consejos-section {
+  background: #f9fef9;
+  padding: 4rem 0;
+}
+
+.consejos-section h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  color: #28a745;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.consejos-list {
+  list-style: none;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 1.8rem;
+}
+
+.consejos-list li {
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   font-size: 1.1rem;
   color: #333;
-  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.info-section ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 1rem;
-}
-
-.info-section ul li {
-  position: relative;
-  padding-left: 28px;
-  margin-bottom: 0.8rem;
-}
-
-.info-section ul li::before {
-  content: "✔";
+.icon-green {
   color: #28a745;
-  position: absolute;
-  left: 0;
-  font-weight: bold;
+  font-size: 1.8rem;
 }
 
-.info-section img {
-  max-width: 100%;
-  margin-top: 2rem;
-  border-radius: 8px;
-}
-
-/* CTA / DESCARGA */
-.descarga {
+/* ====== Acción ====== */
+.accion-section {
+  background: #28a745;
+  padding: 3rem 0;
   text-align: center;
-  padding: 3rem 1rem;
-  background-color: #f0fff5;
 }
 
-/* FOOTER */
+.accion-section .btn-primary {
+  background-color: #fff;
+  color: #28a745;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 1.2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accion-section .btn-primary:hover {
+  background-color: #e6f2ea;
+  color: #1e5d22;
+}
+
+/* ====== Footer ====== */
 footer {
   text-align: center;
-  padding: 1.5rem;
-  background-color: #f5f5f5;
-  font-size: 0.9rem;
+  padding: 1.5rem 0;
+  background-color: #f4f4f4;
   color: #666;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .hero {
+/* ====== Responsive ====== */
+@media (max-width: 900px) {
+  .hero-content, .funciona-content {
     flex-direction: column;
-    text-align: center;
   }
 
-  .hero-text {
-    padding-right: 0;
+  .funciona-image {
+    text-align: center !important;
   }
 
-  .hero-image img {
-    max-width: 100%;
+  .hero-text h1 {
+    font-size: 2rem;
   }
 
-  .nav {
-    gap: 1rem;
+  .funciona-text h2 {
+    font-size: 1.8rem;
   }
 }
 
+@media (max-width: 480px) {
+  .btn-primary {
+    font-size: 1rem;
+    padding: 0.9rem 2rem;
+  }
+
+  .accion-section .btn-primary {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+  }
+}
